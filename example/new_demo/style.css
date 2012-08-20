@@ -1,0 +1,167 @@
+/*
+* DEMO STYLE
+* @author guzhihao
+* @data 20120818
+*/
+
+/* HTML5 Init */
+article, aside, audio, canvas, details, dialog, footer, header, hgroup ,menu, nav, section, video {
+	display: block;
+}
+
+html {
+	background: #EEEEEE; 
+}
+
+body {
+	font-family: "微软雅黑";
+}
+
+a {
+	color: #1e1e1e;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#header {
+	/*
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+	*/
+	position: fixed;
+	top: 5px;
+	left: 0;
+	height: 35px;
+	width: 100%;		
+}
+
+#header-nav {
+	margin: 0 auto;
+	width: 1080px;
+	overflow: hidden;
+}
+
+#header-nav li {
+	display: block;
+	float: left;
+}
+
+#header-nav li a {
+	color: #1e1e1e;
+	text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.6);
+	display: block;
+	float: left;
+	padding: 0 10px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 0.5s ease;
+}
+
+#header-nav li a:hover {
+	background: rgba(200, 200, 200, 0.8);
+}
+
+/* Footer */
+#footer {
+	background: #EEEEEE; 
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	width: 100%;
+	height: 20px;
+}
+#footer mark {
+	background: none;
+	color: #1E1E1E;
+	text-shadow: -1px -1px 10px rgba(60, 60, 60, 0.7);
+	display: block;
+	margin: 0 auto;
+	width: 1080px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+}
+
+/* content */
+#content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50px;
+	bottom: 60px;
+}
+
+#content .wrap {
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	position: absolute;
+	left: 50%;
+	margin-left: -540px;
+	width: 1080px;
+	height: 100%;
+	border-radius: 10px;
+}
+
+/* Siderbar */
+#sidebar {
+	border-right: 2px dashed #dfdfdf;
+	position: absolute;	
+	left: 50%;
+	margin-left: -540px;
+	width: 270px;
+	height: 100%;
+	overflow: auto;
+}
+
+#sidebar > ul {
+	padding: 10px 10px 10px 20px;
+}
+#sidebar ul.children {
+	display: none;
+	padding: 0 0 0 10px;
+}
+#sidebar ul li {
+}
+#sidebar ul a {
+	font-size: 12px;
+	line-height: 20px;	
+}
+#sidebar li.show-children {
+	background: url("./images/icon-add.png") no-repeat;
+	padding-left: 20px;
+}
+#sidebar li.hide-children {
+	background: url("./images/icon-minus.png") no-repeat;
+	padding-left: 20px;
+}
+
+#article {
+	position: absolute;
+	right: 50%;
+	margin-right: -540px;
+	width: 800px;
+	height: 100%;
+	overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,117 @@
+/*
+* DEMO IFRAME STYLE
+* @author guzhihao
+* @data 20120818
+*/
+
+/* HTML5 Init */
+article, aside, audio, canvas, details, dialog, footer, header, hgroup ,menu, nav, section, video {
+	display: block;
+}
+
+html {
+	background: #ffffff; 
+}
+
+body {
+	font-family: "微软雅黑";
+	font-size: 12px;
+}
+
+a {
+	color: #1e1e1e;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.red-color {
+	color: #B35E4D;
+}
+.blue-color {
+	color: #669199;
+}
+.bold {
+	font-size: bold;
+}
+
+/* 主体 */
+.info,
+.demo {
+	padding: 10px;	
+	line-height: 20px;
+}
+.info h2 {
+	text-shadow: -1px -1px 1px rgba(210, 210, 210, 1);
+	font-size: 25px;
+	line-height: 35px;	
+	text-decoration: underline;
+}
+.info h3,
+.demo h3 {
+	font-weight: bolder;	
+	font-size: 14px;
+	line-height: 25px;
+}
+.info .intro,
+.info .set-value,
+.demo .code,
+.demo .show {
+	border-top: 1px dashed #dfdfdf;	
+	margin: 10px 0 0 0;
+	padding: 10px 0 0 0;	
+}
+.info table {
+	border: 1px solid #ededed;
+	margin: 5px 0 10px 0;
+}
+.info th {
+	background: #f8f8f8;
+}
+.info th,
+.info td {
+	border: 1px solid #ededed;
+	padding: 0.5em;
+}
+/* DEMO */
+#code-content {
+	background-color: #eeeeee;
+	border: 1px dashed #143352;
+	font-family: "Consolas";
+	padding: 10px;
+	margin: 0 0 10px 0;
+	min-height: 150px;
+	width: 90%;
+}
+.show {
+	position: relative;
+	padding: 10px;
+	min-height: 200px;
+}
+#exec {
+	background-color: #ededed;
+	cursor: pointer;
+	display: inline-block;
+	padding: 5px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
