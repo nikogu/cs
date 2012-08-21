@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript">
+		//html5 script
+		(function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i])}})();
+		</script>
+		<link rel="stylesheet" type="text/css" href="../reset.css" />
+		<link rel="stylesheet" type="text/css" href="../iframe.css" />
+	</head>
+	<body>
+		<section class="info">
+			<h2>透明背景色</h2>
+			<article class="intro">
+				<h3>说明</h3>
+				RGB色彩模式（也翻译为“红绿蓝”，比较少用）是工业界的一种颜色标准，是通过对红(R)、绿(G)、蓝(B)三个颜色通道的变化以及它们相互之间的叠加来得到各式各样的颜色的，RGB即是代表红、绿、蓝三个通道的颜色，这个标准几乎包括了人类视力所能感知的所有颜色，是目前运用最广的颜色系统之一。RGBA在RGB的基础上多了控制alpha透明度的参数。
+			</article>
+			<article class="set-value">
+				<h3>参考值</h3>
+				<table>
+					<tr><th>属性名</th><th>属性值</th></tr>
+					<tr><td>background-color</td><td>rgba[r, g, b, a]</td></tr>
+				</table>
+				rgba[r, g, b, a]中参数r、g、b分别代表红色、绿色、蓝色值，取值范围为0~255的正整数或者百分数，参数a为Alpha不透明度参数，取值为0~1之间，不可为负值。
+			</article>
+		</section>
+		<section class="demo">
+			<h3>代码示例</h3>
+			<span class="operate">点击下面的代码可修改</span>
+			<a href="#exec-now" id="exec">运行</a>
+			<section class="code">
+
+				<!-- 代码写在这里 -->
+
+				<textarea id="code-content">
+<style>
+	#test {
+		background: #cccccc;
+		display: block;
+		position: relative;
+		width: 100px;
+		height: 100px;
+	}
+	#test1 {
+		background: rgba(80,34,90,0.5);
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		width: 100px;
+		height: 100px;
+		text-align: center;
+	}
+</style>
+<div id="test">我是不透明的<div id="test1">我是透明的</div></div>
+				</textarea>
+
+				<!-- 代码写在这里 -->
+
+			</section>
+			<h3>DEMO</h3>
+			<section class="show" id="show-content">
+<style>
+	#test {
+		background: #cccccc;
+		display: block;
+		position: relative;
+		width: 100px;
+		height: 100px;
+	}
+	#test1 {
+		background: rgba(80,34,90,0.5);
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		width: 100px;
+		height: 100px;
+		text-align: center;
+	}
+				</style>
+				<div id="test">我是不透明的<div id="test1">我是透明的</div></div>			
+			</section>
+		</section>
+	</body>
+</html>

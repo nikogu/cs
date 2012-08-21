@@ -23,8 +23,38 @@
 			<section class="wrap">
 				<aside id="sidebar">
 				</aside>
-				<article id="article">
-					<iframe name="article-iframe" frameborder=0 scrolling="auto" height="98%" width="100%" src="./sample/sample_fixed.html"></iframe>
+				<article id="view">
+
+				<script type="template" id="template">	
+					<section class="info">
+						<h2><%= info-title =%></h2>
+						<article class="intro">
+							<h3><%= intro-title =%></h3>
+							<%= intro-content =%>
+						</article>
+						<article class="set-value">
+							<h3><%= set-value =%></h3>
+							<%= set-value-content =%>
+						</article>
+					</section>
+					<section class="demo">
+						<h3><%= demo-title =%></h3>
+						<span class="operate">点击下面的代码可修改</span>
+						<a href="#exec-now" id="exec">运行</a>
+						<section class="code">
+
+						<textarea id="code-content"><%= code =%></textarea>
+
+					</section>
+					<section class="show">
+						<h3><%= show-title =%></h3>	
+						<section id="show-content">
+							<%= show-content =%>
+						</section>
+					</section>
+				</section>		
+				</script>
+
 				</article>
 			</section>
 		</section>

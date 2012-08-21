@@ -27,14 +27,22 @@ a:hover {
 	text-decoration: underline;
 }
 
-.red-color {
+.bold {
+	font-weight: bold;
+}
+
+/* 组件 */
+.r-color {
 	color: #B35E4D;
 }
-.blue-color {
-	color: #669199;
+.b-color {
+	color: #669199;	
 }
-.bold {
-	font-size: bold;
+.blod {
+	font-weight: bold;
+}
+.italic {
+	font-style: italic;	
 }
 
 /* 主体 */
@@ -51,6 +59,8 @@ a:hover {
 }
 .info h3,
 .demo h3 {
+	background: url("images/icon-title.png") no-repeat 0 5px;
+	padding: 0 0 0 20px;
 	font-weight: bolder;	
 	font-size: 14px;
 	line-height: 25px;

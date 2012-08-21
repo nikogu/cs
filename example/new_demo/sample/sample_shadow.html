@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript">
+		//html5 script
+		(function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i])}})();
+		</script>
+		<link rel="stylesheet" type="text/css" href="../reset.css" />
+		<link rel="stylesheet" type="text/css" href="../iframe.css" />
+	</head>
+	<body>
+		<section class="info">
+			<h2>阴影增强</h2>
+			<article class="intro">
+				<h3>说明</h3>
+				设置或检索对象阴影
+			</article>
+			<article class="set-value">
+				<h3>参考值</h3>
+				<table>
+					<tr><th>属性名</th><th>属性值</th></tr>
+					<tr><td>box-shadow</td><td>none | shadow [ , shadow ]*</td></tr>
+					<tr><td>shadow</td><td>inset? && [ <length>{2,4} && <color>? ]</td></tr>
+				</table>
+				none：无阴影<br/>
+				[length]:<br/>
+					①：第1个长度值用来设置对象的阴影水平偏移值。可以为负值<br/>
+					②：第2个长度值用来设置对象的阴影垂直偏移值。可以为负值<br/>
+					③：如果提供了第3个长度值则用来设置对象的阴影模糊值。不允许负值<br/>
+					④：如果提供了第4个长度值则用来设置对象的阴影外延值。不允许负值<br/>
+				[color]：<br/>
+					设置对象的阴影的颜色。请参阅颜色值<br/>
+					inset：设置对象的阴影类型为内阴影。该值为空时，则对象的阴影类型为外阴影<br/>
+			</article>
+		</section>
+		<section class="demo">
+			<h3>代码示例</h3>
+			<span class="operate">点击下面的代码可修改</span>
+			<a href="#exec-now" id="exec">运行</a>
+			<section class="code">
+
+				<!-- 代码写在这里 -->
+
+				<textarea id="code-content">
+<style>
+	#test {
+		background: #ccc;
+		box-shadow:5px 5px rgba(0,0,0,.6);
+		display: block;
+		position: relative;
+		width: 100px;
+		height: 100px;
+	}
+	#test1 {
+		background: #ccc;
+		box-shadow:2px 2px 5px 1px rgba(0,0,0,.6) inset;
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		width: 100px;
+		height: 100px;
+		text-align: center;
+	}
+</style>
+<div id="test">我是透明的<div id="test1">我是透明的</div></div>
+				</textarea>
+
+				<!-- 代码写在这里 -->
+
+			</section>
+			<h3>DEMO</h3>
+			<section class="show" id="show-content">
+<style>
+	#test {
+		background: #ccc;
+		box-shadow:5px 5px rgba(0,0,0,.6);
+		display: block;
+		position: relative;
+		width: 100px;
+		height: 100px;
+	}
+	#test1 {
+		background: #ccc;
+		box-shadow:2px 2px 5px 1px rgba(0,0,0,.6) inset;
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		width: 100px;
+		height: 100px;
+		text-align: center;
+	}
+				</style>
+				<div id="test">我是透明的<div id="test1">我是透明的</div></div>			
+			</section>
+		</section>
+	</body>
+</html>

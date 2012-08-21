@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript">
+		//html5 script
+		(function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i])}})();
+		</script>
+		<link rel="stylesheet" type="text/css" href="../reset.css" />
+		<link rel="stylesheet" type="text/css" href="../iframe.css" />
+	</head>
+	<body>
+		<section class="info">
+			<h2>线性渐变</h2>
+			<article class="intro">
+				<h3>说明</h3>
+				用线性渐变创建图像
+			</article>
+			<article class="set-value">
+				<h3>参考值</h3>
+				<table>
+					<tr><th>属性名</th><th>属性值</th></tr>
+					<tr><td>linear-gradient</td><td>[ point,]? color-stop[, color-stop]+</td></tr>
+					<tr><td>point</td><td>[ left | right ]? [ top | bottom ]? || angle?</td></tr>
+					<tr><td>color-stop</td><td>color [ length | percentage ]?</td></tr>
+
+				</table>
+				[point]:<br/>
+					left：设置左边为渐变起点的横坐标值。<br/>
+					right：设置右边为渐变起点的横坐标值。<br/>
+					top：设置顶部为渐变起点的纵坐标值。<br/>
+					bottom：设置底部为渐变起点的纵坐标值。<br/>
+				[angle]：<br/>
+					用角度值指定渐变的方向（或角度）。<br/>
+				[color-stop]：指定渐变的起止颜色。<br/>
+					[color]：<br/>
+						指定颜色。请参阅颜色值<br/>
+					[length]：<br/>
+						用长度值指定起止色位置。不允许负值<br/>
+					[percentage]：<br/>
+						用百分比指定起止色位置。
+			</article>
+		</section>
+		<section class="demo">
+			<h3>代码示例</h3>
+			<span class="operate">点击下面的代码可修改</span>
+			<a href="#exec-now" id="exec">运行</a>
+			<section class="code">
+
+				<!-- 代码写在这里 -->
+
+				<textarea id="code-content">
+<style>
+	#test {
+		background: #cccccc;
+		display: block;
+		position: relative;
+		width: 100px;
+		height: 100px;
+	}
+	#test1 {
+		background: rgba(80,34,90,0.5);
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		width: 100px;
+		height: 100px;
+		text-align: center;
+	}
+</style>
+<div id="test">我是不透明的<div id="test1">我是透明的</div></div>
+				</textarea>
+
+				<!-- 代码写在这里 -->
+
+			</section>
+			<h3>DEMO</h3>
+			<section class="show" id="show-content">
+<style>
+	#test {
+		background: #cccccc;
+		display: block;
+		position: relative;
+		width: 100px;
+		height: 100px;
+	}
+	#test1 {
+		background: rgba(80,34,90,0.5);
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		width: 100px;
+		height: 100px;
+		text-align: center;
+	}
+				</style>
+				<div id="test">我是不透明的<div id="test1">我是透明的</div></div>			
+			</section>
+		</section>
+	</body>
+</html>

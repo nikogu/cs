@@ -22,18 +22,39 @@ define( function(require) {
 	var $ = require( "jquery" );
 
 	//数据
-	var menuData = require( "../module/data" ).menuData;
+	var menuData = require( "../module/menu_data" ).menuData;
 
 	//建立菜单
 	require( "../module/build_menu" ).build( menuData, $( "#sidebar" ) );
 
 	//菜单逻辑
-	var menu = require( "../module/menu" );
-    menu.build( $( "#sidebar a" ), "children" );
+	require( "../module/menu" ).build( $( "#sidebar a" ), "children" );
 
     //iframe里面的逻辑
-    window.frames[ "article-iframe" ].onload = function(){
-    	var iframe = window.frames[ "article-iframe" ];
-    	require( "../module/iframe" ).control( iframe, $ );
+    /*
+    if( $.browser.msie ) {
+        //IE下iframe的load
+        document.getElementById("article-iframe").onreadystatechange = function(){
+            if( this.readyState == "complete" ) {
+                var iframe = window.frames[ "article-iframe" ];
+                require( "../module/iframe" ).control( iframe, $ );    
+            }
+        }
+
+    } else {
+
+        document.getElementById("article-iframe").onload = function(){
+            var iframe = window.frames[ "article-iframe" ];
+            require( "../module/iframe" ).control( iframe, $ );
+        }
+
     }
+    */
+
+    //获取数据
+    require("../module/get_data").getData( $("#template"), $("#view") );
+
+    //绑定生成DEMO点击
+    require("../module/build_demo").show( $("#exec"), "code-content", "show-content" );
+
 });

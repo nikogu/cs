@@ -14,6 +14,7 @@ define( function( require, exports, module ) {
 		changeBtn.click( function() {
 			var code = dom.getElementById("code-content").value,
 				show = dom.getElementById("show-content");	
+			console.log( code );
 			show.innerHTML = code;
 		});
 

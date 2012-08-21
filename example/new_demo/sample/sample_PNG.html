@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript">
+		//html5 script
+		(function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i])}})();
+		</script>
+		<link rel="stylesheet" type="text/css" href="../reset.css" />
+		<link rel="stylesheet" type="text/css" href="../iframe.css" />
+	</head>
+	<body>
+		<section class="info">
+			<h2>PNG24 Alpha 背景图</h2>
+			<article class="intro">
+				<h3>说明</h3>
+				读取png源码,判断是否为png24 且包含alpha半透明,如存在,在ie6下会自动转化为filter实现兼容(本实现无相对路径问题)
+			</article>
+			<article class="set-value">
+				<h3>参考值</h3>
+				<table>
+					<tr><th>属性名</th><th>属性值</th></tr>
+					<tr><td>background-image</td><td>[url]</td></tr>
+				</table>
+				[url]为图片路径。
+			</article>
+		</section>
+		<section class="demo">
+			<h3>代码示例</h3>
+			<span class="operate">点击下面的代码可修改</span>
+			<a href="#exec-now" id="exec">运行</a>
+			<section class="code">
+
+				<!-- 代码写在这里 -->
+
+				<textarea id="code-content">
+<style>
+	#test {
+		background: #cccccc;
+		display: block;
+		position: relative;
+		width: 100px;
+		height: 100px;
+	}
+	#test1 {
+		background-image: url(/example/new_demo/images/png31.png);
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		width: 128px;
+		height: 128px;
+		text-align: center;
+	}
+</style>
+<div id="test">我是demo<div id="test1">我也是demo</div></div>
+				</textarea>
+
+				<!-- 代码写在这里 -->
+
+			</section>
+			<h3>DEMO</h3>
+			<section class="show" id="show-content">
+<style>
+	#test {
+		background: #cccccc;
+		display: block;
+		position: relative;
+		width: 100px;
+		height: 100px;
+	}
+	#test1 {
+		background-image: url(/example/new_demo/images/png31.png);
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		width: 128px;
+		height: 128px;
+		text-align: center;
+	}
+</style>
+				<div id="test">我是demo</div><div id="test1">我也是demo</div>			
+			</section>
+		</section>
+	</body>
+</html>
