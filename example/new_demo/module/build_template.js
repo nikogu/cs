@@ -22,24 +22,43 @@ define( function( require, exports, module ) {
 
 		//替换模版变量
 		for ( var i = match.length; i-- ; ) {
+
 			var value = getValue( match[i] ),
 				temp = match[i];
+
+			var re = new RegExp( temp , "gi" );
+
 			if( value in data ) {
-				var re = new RegExp( match[i], "gi" );
-				source = source.replace( re, data[value] );
+
 				/*
-				while( source.indexOf(temp) > -1 ) {
+					while( source.indexOf(temp) > -1 ) {
 					source = source.replace( temp, data[value] );
 				}
 				*/
-				if ( template.find ) {
-					view.html(source);
+
+				if ( $.isArray( data[value] ) ) {
+
+					var str = "",
+						arr = data[value];
+					for ( var j=0; j<arr.length; j++ ) {
+						str += arr[j] + "\n";
+					}//end for
+					source = source.replace( re, str );
+
 				} else {
-					view.innerHTML = source;
+					source = source.replace( re, data[value] );
 				}//end if
-				
+
 			}//end if
+
 		}//end for
+
+		//插入HTML
+		if ( template.find ) {
+			view[0].innerHTML = source;
+		} else {
+			view.innerHTML = source;
+		}//end if
 
 	}//end build	
 

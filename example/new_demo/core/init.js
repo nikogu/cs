@@ -22,7 +22,7 @@ define( function(require) {
 	var $ = require( "jquery" );
 
 	//数据
-	var menuData = require( "../module/menu_data" ).menuData;
+	var menuData = require( "../data/menu_data" ).menuData;
 
 	//建立菜单
 	require( "../module/build_menu" ).build( menuData, $( "#sidebar" ) );
