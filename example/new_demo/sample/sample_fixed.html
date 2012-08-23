@@ -11,10 +11,10 @@
 	</head>
 	<body>
 		<section class="info">
-			<h2>fixed</h2>
+			<h2>固定定位</h2>
 			<article class="intro">
 				<h3>说明</h3>
-				对象脱离正常文档流，使用<span class="red-color">top，right，bottom，left</span>等属性以窗口为参考点进行定位，当出现滚动条时，对象不会随着滚动。IE6及以下不支持此参数值
+				让HTML固定在浏览器的某个位置
 			</article>
 			<article class="set-value">
 				<h3>参考值</h3>
@@ -22,7 +22,7 @@
 					<tr><th>属性名</th><th>属性值</th></tr>
 					<tr><td>position</td><td>fixed</td></tr>
 				</table>
-				这里是取值说明
+				设置这个属性后可以让元素固定在浏览器的某个位置
 			</article>
 		</section>
 		<section class="demo">
@@ -35,24 +35,23 @@
 
 				<textarea id="code-content">
 <style>
-#test {
-	background: #cccccc;
-	display: block;
-	position: relative;
-	width: 100px;
-	height: 100px;
-}
-#test1 {
-	background: rgba(80,34,90,0.5);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100px;
-	height: 100px
-	text-align: center;
-}
+	#test {
+		background: #cccccc;
+		display: block;
+		width: 100px;
+		height: 100px;
+	}
+	#test1 {
+		background: rgba(80,34,90,0.5);
+		position: fixed;
+		top: 30px;
+		left: 30px;
+		width: 100px;
+		height: 100px;
+		text-align: center;
+	}
 </style>
-<div id="test">我是透明的<div id="test1">我也是透明的</div></div>
+<div id="test">我是不透明的</div><div id="test1">我是透明的</div>
 				</textarea>
 
 				<!-- 代码写在这里 -->
@@ -60,25 +59,24 @@
 			</section>
 			<h3>DEMO</h3>
 			<section class="show" id="show-content">
-				<style>
-					#test {
-						background: #cccccc;
-						display: block;
-						position: relative;
-						width: 100px;
-						height: 100px;
-					}
-					#test1 {
-						background: rgba(80,34,90,0.5);
-						position: absolute;
-						top: 0;
-						left: 0;
-						width: 100px;
-						height: 100px
-						text-align: center;
-					}
+<style>
+	#test {
+		background: #cccccc;
+		display: block;
+		width: 100px;
+		height: 100px;
+	}
+	#test1 {
+		background: rgba(80,34,90,0.5);
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		width: 100px;
+		height: 100px;
+		text-align: center;
+	}
 				</style>
-				<div id="test">我是透明的<div id="test1">我也是透明的</div></div>			
+				<div id="test">demo1</div><div id="test1">demo2</div>			
 			</section>
 		</section>
 	</body>

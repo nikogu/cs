@@ -1,0 +1,6 @@
+{
+  "info-title": "UI状态",
+  "intro-content": "                 1、E:enable  指定当元素处于可用状态时的样式；<br/>\n                 2、E:disable 指定当元素处于不可用状态时的样式；<br/> \n                 3、E:checked  指定当表单中的radio单选框或checkbox复选框处于选取状态时的样子<br/>",
+  "set-value-content": "                <table>\n                    <tr><th>属性名</th><th>属性值</th></tr>\n                    <tr><td>:active</td><td>-</td></tr>\n                </table>\n                具体说明请点击<a href=\"http://www.cnblogs.com/ccqqccqqqq/archive/2012/02/27/2370194.html\" target=_blank>查看详细属性</a>",
+  "code": "<style>\n    #test:enable {\n        background: #cccccc;\n        display: block;\n        width: 100px;\n        height: 20px;\n    }\n    #test1:disable {\n        background: #999;\n        display: block;\n        width: 100px;\n        height: 20px;\n    }\n    #test2:checked {\n        background: #666;\n        border: 1px solid #ccc;\n    }\n\n</style>\n<input type=\"text\" id=\"test\" disabled=\"disabled\" value=\"不可用状态样式：disable\"> \n<input type=\"text\" id=\"test1\"  value=\"可用状态样式：enable\"> \n<input type=\"radio\" id=\"test2\" checked=\"checked\">checked样式"
+}

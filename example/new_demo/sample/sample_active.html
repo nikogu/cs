@@ -11,20 +11,18 @@
 	</head>
 	<body>
 		<section class="info">
-			<h2>线性渐变</h2>
+			<h2>激活效果</h2>
 			<article class="intro">
 				<h3>说明</h3>
-				用线性渐变创建图像
+				向激活（在鼠标点击与释放之间发生的事件）的元素添加特殊的样式。
 			</article>
 			<article class="set-value">
 				<h3>参考值</h3>
 				<table>
 					<tr><th>属性名</th><th>属性值</th></tr>
-					<tr><td>linear-gradient</td><td>[ point,]? color-stop[, color-stop]+</td></tr>
-					<tr><td>point</td><td>[ left | right ]? [ top | bottom ]? || angle?</td></tr>
-					<tr><td>color-stop</td><td>color [ length | percentage ]?</td></tr>
+					<tr><td>:hover</td><td>-</td></tr>
 				</table>
-				具体参数请点击<a href="http://www.cnblogs.com/gaoxue/articles/CSS3Gradient-1.html" target=_blank>查看详细属性</a>
+				具体说明请点击<a href="http://www.w3school.com.cn/css/pr_pseudo_hover.asp" target=_blank>查看详细属性</a>
 			</article>
 		</section>
 		<section class="demo">
@@ -40,21 +38,18 @@
 	#test {
 		background: #cccccc;
 		display: block;
-		position: relative;
 		width: 100px;
 		height: 100px;
 	}
-	#test1 {
-		background: rgba(80,34,90,0.5);
-		position: absolute;
-		top: 30px;
-		left: 30px;
+	#test:active {
+		background: #a1a;
+		display: block;
 		width: 100px;
 		height: 100px;
-		text-align: center;
 	}
+
 </style>
-<div id="test">我是不透明的<div id="test1">我是透明的</div></div>
+<div id="test">鼠标点击我看看</div>
 				</textarea>
 
 				<!-- 代码写在这里 -->
@@ -66,21 +61,18 @@
 	#test {
 		background: #cccccc;
 		display: block;
-		position: relative;
 		width: 100px;
 		height: 100px;
 	}
-	#test1 {
-		background: rgba(80,34,90,0.5);
-		position: absolute;
-		top: 30px;
-		left: 30px;
+	#test:active {
+		background: #a1a;
+		display: block;
 		width: 100px;
 		height: 100px;
-		text-align: center;
 	}
-				</style>
-				<div id="test">demo1<div id="test1">demo2</div></div>			
+
+</style>
+<div id="test">鼠标点击我看看</div>		
 			</section>
 		</section>
 	</body>

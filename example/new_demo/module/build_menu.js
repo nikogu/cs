@@ -24,7 +24,7 @@ define( function( require, exports, module ) {
 
 				//有显示加info
 				if ( data[i]["info"] ) {
-					html += '<a target="article-iframe" type="get" href="sample/' + data[i]["info"] + '">'+data[i]["title"]+'</a>';
+					html += '<a target="article-iframe" type="get" href="data/' + data[i]["info"] + '">'+data[i]["title"]+'</a>';
 				} else {
 					html += '<a href="#">'+data[i]["title"]+'</a>';
 				}

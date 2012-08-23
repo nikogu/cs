@@ -21,17 +21,8 @@
 				<table>
 					<tr><th>属性名</th><th>属性值</th></tr>
 					<tr><td>box-shadow</td><td>none | shadow [ , shadow ]*</td></tr>
-					<tr><td>shadow</td><td>inset? && [ <length>{2,4} && <color>? ]</td></tr>
+					<tr><td>shadow</td><td>inset? & [ length{2,4} & color? ]</td></tr>
 				</table>
-				none：无阴影<br/>
-				[length]:<br/>
-					①：第1个长度值用来设置对象的阴影水平偏移值。可以为负值<br/>
-					②：第2个长度值用来设置对象的阴影垂直偏移值。可以为负值<br/>
-					③：如果提供了第3个长度值则用来设置对象的阴影模糊值。不允许负值<br/>
-					④：如果提供了第4个长度值则用来设置对象的阴影外延值。不允许负值<br/>
-				[color]：<br/>
-					设置对象的阴影的颜色。请参阅颜色值<br/>
-					inset：设置对象的阴影类型为内阴影。该值为空时，则对象的阴影类型为外阴影<br/>
 			</article>
 		</section>
 		<section class="demo">
@@ -46,7 +37,7 @@
 <style>
 	#test {
 		background: #ccc;
-		box-shadow:5px 5px rgba(0,0,0,.6);
+		-webkit-box-shadow:5px 5px rgba(0,0,0,.6);
 		display: block;
 		position: relative;
 		width: 100px;
@@ -54,7 +45,7 @@
 	}
 	#test1 {
 		background: #ccc;
-		box-shadow:2px 2px 5px 1px rgba(0,0,0,.6) inset;
+		-webkit-box-shadow:2px 2px 5px 1px rgba(0,0,0,.6) inset;
 		position: absolute;
 		top: 30px;
 		left: 30px;
@@ -74,7 +65,7 @@
 <style>
 	#test {
 		background: #ccc;
-		box-shadow:5px 5px rgba(0,0,0,.6);
+		-webkit-box-shadow:5px 5px rgba(0,0,0,.6);
 		display: block;
 		position: relative;
 		width: 100px;
@@ -82,7 +73,7 @@
 	}
 	#test1 {
 		background: #ccc;
-		box-shadow:2px 2px 5px 1px rgba(0,0,0,.6) inset;
+		-webkit-box-shadow:2px 2px 5px 1px rgba(0,0,0,.6) inset;
 		position: absolute;
 		top: 30px;
 		left: 30px;

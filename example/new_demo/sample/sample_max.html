@@ -11,20 +11,21 @@
 	</head>
 	<body>
 		<section class="info">
-			<h2>线性渐变</h2>
+			<h2>溢出控制</h2>
 			<article class="intro">
 				<h3>说明</h3>
-				用线性渐变创建图像
+				控制超出大小的切除和不足大小的补充。
 			</article>
 			<article class="set-value">
 				<h3>参考值</h3>
 				<table>
 					<tr><th>属性名</th><th>属性值</th></tr>
-					<tr><td>linear-gradient</td><td>[ point,]? color-stop[, color-stop]+</td></tr>
-					<tr><td>point</td><td>[ left | right ]? [ top | bottom ]? || angle?</td></tr>
-					<tr><td>color-stop</td><td>color [ length | percentage ]?</td></tr>
+					<tr><td>max-width</td><td>[width]</td></tr>
+					<tr><td>max-height</td><td>[height]</td></tr>
+					<tr><td>min-width</td><td>[width]</td></tr>
+					<tr><td>mmin-height</td><td>[height]</td></tr>
 				</table>
-				具体参数请点击<a href="http://www.cnblogs.com/gaoxue/articles/CSS3Gradient-1.html" target=_blank>查看详细属性</a>
+				width:最大/最小宽度，height:最大/最小高度。
 			</article>
 		</section>
 		<section class="demo">
@@ -41,20 +42,20 @@
 		background: #cccccc;
 		display: block;
 		position: relative;
-		width: 100px;
-		height: 100px;
+		max-width: 50px;
+		max-height: 50px;
 	}
 	#test1 {
 		background: rgba(80,34,90,0.5);
 		position: absolute;
 		top: 30px;
 		left: 30px;
-		width: 100px;
-		height: 100px;
+		min-width: 200px;
+		min-height: 200px;
 		text-align: center;
 	}
 </style>
-<div id="test">我是不透明的<div id="test1">我是透明的</div></div>
+<div id="test">demo1</div><div id="test1">demo2</div>
 				</textarea>
 
 				<!-- 代码写在这里 -->
@@ -80,7 +81,7 @@
 		text-align: center;
 	}
 				</style>
-				<div id="test">demo1<div id="test1">demo2</div></div>			
+				<div id="test">demo1</div><div id="test1">demo2</div>			
 			</section>
 		</section>
 	</body>

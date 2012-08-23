@@ -11,20 +11,18 @@
 	</head>
 	<body>
 		<section class="info">
-			<h2>线性渐变</h2>
+			<h2>圆角增强</h2>
 			<article class="intro">
 				<h3>说明</h3>
-				用线性渐变创建图像
+				设置或检索对象使用圆角边框。
 			</article>
 			<article class="set-value">
 				<h3>参考值</h3>
 				<table>
 					<tr><th>属性名</th><th>属性值</th></tr>
-					<tr><td>linear-gradient</td><td>[ point,]? color-stop[, color-stop]+</td></tr>
-					<tr><td>point</td><td>[ left | right ]? [ top | bottom ]? || angle?</td></tr>
-					<tr><td>color-stop</td><td>color [ length | percentage ]?</td></tr>
+					<tr><td>border-radius</td><td>[ length | percentage ]{1,4} [ / [ length | percentage ]{1,4} ]?</td></tr>
 				</table>
-				具体参数请点击<a href="http://www.cnblogs.com/gaoxue/articles/CSS3Gradient-1.html" target=_blank>查看详细属性</a>
+				具体参数请点击<a href="http://www.php100.com/manual/css3_0/border-radius.shtml" target=_blank>查看详细属性</a>
 			</article>
 		</section>
 		<section class="demo">
@@ -43,6 +41,7 @@
 		position: relative;
 		width: 100px;
 		height: 100px;
+		border-radius:10px 20px;
 	}
 	#test1 {
 		background: rgba(80,34,90,0.5);
@@ -52,9 +51,10 @@
 		width: 100px;
 		height: 100px;
 		text-align: center;
+		border-radius:10px 20px 30px 40px;
 	}
 </style>
-<div id="test">我是不透明的<div id="test1">我是透明的</div></div>
+<div id="test">提供2个参数<div id="test1">提供4个参数</div></div>
 				</textarea>
 
 				<!-- 代码写在这里 -->
@@ -69,6 +69,7 @@
 		position: relative;
 		width: 100px;
 		height: 100px;
+		border-radius:10px 20px;
 	}
 	#test1 {
 		background: rgba(80,34,90,0.5);
@@ -78,9 +79,10 @@
 		width: 100px;
 		height: 100px;
 		text-align: center;
+		border-radius:10px 20px 30px 40px;
 	}
-				</style>
-				<div id="test">demo1<div id="test1">demo2</div></div>			
+</style>
+<div id="test">提供2个参数<div id="test1">提供4个参数</div></div>		
 			</section>
 		</section>
 	</body>

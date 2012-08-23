@@ -11,20 +11,20 @@
 	</head>
 	<body>
 		<section class="info">
-			<h2>线性渐变</h2>
+			<h2>transition动画增强</h2>
 			<article class="intro">
 				<h3>说明</h3>
-				用线性渐变创建图像
+				创建动画
 			</article>
 			<article class="set-value">
 				<h3>参考值</h3>
 				<table>
 					<tr><th>属性名</th><th>属性值</th></tr>
-					<tr><td>linear-gradient</td><td>[ point,]? color-stop[, color-stop]+</td></tr>
-					<tr><td>point</td><td>[ left | right ]? [ top | bottom ]? || angle?</td></tr>
-					<tr><td>color-stop</td><td>color [ length | percentage ]?</td></tr>
+					<tr><td>transition-property</td><td>[?]</td></tr>
+					<tr><td>transition-duration</td><td>[?]</td></tr>
+					<tr><td>transition-timing-function</td><td>[?]</td></tr>
 				</table>
-				具体参数请点击<a href="http://www.cnblogs.com/gaoxue/articles/CSS3Gradient-1.html" target=_blank>查看详细属性</a>
+				具体参数请点击<a href="http://www.zhangxinxu.com/css3/css3-transition-property.php" target=_blank>查看详细属性</a>
 			</article>
 		</section>
 		<section class="demo">
@@ -37,24 +37,18 @@
 
 				<textarea id="code-content">
 <style>
-	#test {
-		background: #cccccc;
-		display: block;
-		position: relative;
-		width: 100px;
-		height: 100px;
-	}
-	#test1 {
-		background: rgba(80,34,90,0.5);
-		position: absolute;
-		top: 30px;
-		left: 30px;
-		width: 100px;
-		height: 100px;
-		text-align: center;
-	}
+.transition_property{
+    -webkit-transform:rotate(10deg);
+    -webkit-transition-property:all; 
+    -webkit-transition-duration:0.5s; 
+    -webkit-transition-timing-function:ease-in;
+}
+.transition_property:hover{
+    -webkit-transform:rotate(40deg);
+}
 </style>
-<div id="test">我是不透明的<div id="test1">我是透明的</div></div>
+鼠标滑过看效果
+<img class="transition_property" alt="picture" src="/example/new_demo/images/girl.gif" width="176" height="220" />
 				</textarea>
 
 				<!-- 代码写在这里 -->
@@ -63,24 +57,18 @@
 			<h3>DEMO</h3>
 			<section class="show" id="show-content">
 <style>
-	#test {
-		background: #cccccc;
-		display: block;
-		position: relative;
-		width: 100px;
-		height: 100px;
-	}
-	#test1 {
-		background: rgba(80,34,90,0.5);
-		position: absolute;
-		top: 30px;
-		left: 30px;
-		width: 100px;
-		height: 100px;
-		text-align: center;
-	}
+.transition_property{
+    -webkit-transform:rotate(10deg);
+    -webkit-transition-property:all; 
+    -webkit-transition-duration:0.5s; 
+    -webkit-transition-timing-function:ease-in;
+}
+.transition_property:hover{
+    -webkit-transform:rotate(40deg);
+}
 				</style>
-				<div id="test">demo1<div id="test1">demo2</div></div>			
+				鼠标滑过看效果
+				<img class="transition_property" alt="picture" src="/example/new_demo/images/girl.gif" width="176" height="220" />			
 			</section>
 		</section>
 	</body>
