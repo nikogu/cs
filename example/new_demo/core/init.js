@@ -52,7 +52,7 @@ define( function(require) {
     */
 
     //获取数据
-    require("../module/get_data").getData( $("#template"), $("#view") );
+    require("../module/get_data").getData( $("#template"), $("#view-content"), $("#iframe"));
 
     //绑定生成DEMO点击
     require("../module/build_demo").show( $("#exec"), "code-content", "show-content" );

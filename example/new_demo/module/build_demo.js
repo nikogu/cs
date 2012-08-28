@@ -7,12 +7,13 @@
 define( function( require, exports, module ) {
 		
 	var $ = require("jquery");	
+	var buildIfram = require("../module/build_iframe");
 
 	//绑定事件
 	function show( button, from, to ){
 
 		button.live("click",function(){
-			$( "#" + to ).html( $( "#" + from ).val() );
+			buildIfram.build( $( "#" + from ).val() )
 		});
 
 	};//end show

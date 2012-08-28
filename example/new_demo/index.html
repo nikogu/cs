@@ -24,38 +24,36 @@
 				<aside id="sidebar">
 				</aside>
 				<article id="view">
-
-				<script type="template" id="template">	
-					<section class="info">
-						<h2><%= info-title =%></h2>
-						<article class="intro">
-							<h3>说明</h3>
-							<%= intro-content =%>
-						</article>
-						<article class="set-value">
-							<h3>参考值</h3>
-							<%= set-value-content =%>
-						</article>
+					<section id="view-content">
+						<h1>这里是cs的简介</h1>
+						<script type="template" id="template">	
+							<section class="info">
+								<h2><%= info-title =%></h2>
+								<article class="intro">
+									<h3>说明</h3>
+									<%= intro-content =%>
+								</article>
+								<article class="set-value">
+									<h3>参考值</h3>
+									<%= set-value-content =%>
+								</article>
+							</section>
+							<section class="demo">
+								<h3>代码示例</h3>
+								<span class="operate">点击下面的代码可修改</span>
+								<a href="#demo-area" id="exec">运行</a>
+								<section class="code">
+									<textarea id="code-content"><%= code =%></textarea>
+								</section>
+							</section>		
+						</script>
 					</section>
-					<section class="demo">
-						<h3>代码示例</h3>
-						<span class="operate">点击下面的代码可修改</span>
-						<a href="#exec-now" id="exec">运行</a>
-						<section class="code">
-
-						<textarea id="code-content"><%= code =%></textarea>
-
+					<h3 id="demo-area">DEMO</h3>	
+					<section id="show-content">
+						<iframe id="iframe" name="iframe" frameborder=0 width="95%" height="200px" src=""></iframe>
 					</section>
-					<section class="show">
-						<h3>DEMO</h3>	
-						<section id="show-content">
-							<%= code =%>
-						</section>
-					</section>
-				</section>		
-				</script>
-
 				</article>
+
 			</section>
 		</section>
 		<section id="footer">

@@ -176,8 +176,7 @@ a:hover {
 	line-height: 35px;	
 	text-decoration: underline;
 }
-.info h3,
-.demo h3 {
+#view h3 {
 	background: url("images/icon-title.png") no-repeat 0 5px;
 	padding: 0 0 0 20px;
 	font-weight: bolder;	

@@ -10,8 +10,9 @@ define( function( require, exports, module ) {
 		link = $("#sidebar a[type='get']");
 
 	var buildTpl = require("../module/build_template");
+	var buildIfram = require("../module/build_iframe");
 
-	function getData( template, view ) {
+	function getData( template, view, iframe ) {
 
 		link.click(function(e){
 			e.preventDefault();
@@ -23,6 +24,22 @@ define( function( require, exports, module ) {
 				"dataType": "JSON",
 				"success": function( data ){
 					buildTpl.build( data, template, view );
+					buildIfram.build( data["code"], iframe);
+
+					/* chrome 下的聚焦问题 之前*/
+					if( /*$.browser.chrome*/false ) {
+						document.getElementById("iframe").onload = function(){
+							function fn(){
+								if ( document.getElementById("view").scrollTop != 0 ){
+									document.getElementById("view").scrollTop = 0;
+									timmer = setTimeout( fn, 20 );
+								} else {
+									clearTimeout( timmer );
+								}
+							}
+							var timmer = setTimeout( fn ,10 );
+						}
+					}//end if
 				},
 				"error": function(){
 					console.log("数据格式错误");	
